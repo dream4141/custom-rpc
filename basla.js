@@ -1,31 +1,19 @@
-const Playboy = require("discord-rpc");
+const rpc = require("discord-rpc");
 
-//Yarattığımız App'in ClientId'si Buraya
+//Yarattığınız app'in client idsi
 const ClientId = '388341171086295040';
 
 Playboy.register(ClientId);
 
-const Mansion = new Playboy.Client({ transport: 'ipc' });
-
-
-
-//////////////////////////////////////
-//##################################//
-//#                                #//
-//#       Custom Rpc Özelliği      #//
-//#  Console.Owner("Maviş");#1693  #//
-//#        Mansion Creation        #//
-//#                                #//
-//##################################//
-//////////////////////////////////////
+const ana = new rpc.Client({ transport: 'ipc' });
 
 
 
 //Asıl Olay İşte Burada
-Mansion.on('ready', () => {
+ana.on('ready', () => {
   console.log("Başarılı...");
   console.log("Mansion Creation RPC\'yi Kullandığınız İçin Teşekkür Ederiz.");
-  Mansion.setActivity({
+  ana.setActivity({
 	//Not: Eğer "... Oynuyor" Değiştirmek İstiyorsanız Yarattığımız App'a Gidip App'in İsmini Değiştirin 
     details: 'Console.Owner("Maviş");',//Ortadaki Yazı
     state: 'Custom RPC Özelliği',//En Alttaki Yazı
@@ -37,4 +25,4 @@ Mansion.on('ready', () => {
 });
 
 //Mansion Creation™ Size Yardım Ve Destek Etmekten Gurur Duyar..
-Mansion.login(ClientId).catch(console.error);
+ana.login(ClientId).catch(console.error);
