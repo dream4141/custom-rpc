@@ -1,7 +1,7 @@
 const rpc = require("discord-rpc");
 
 //Yarattığınız app'in client idsi
-const ClientId = '388341171086295040';
+const ClientId = '388418356547682315';
 
 rpc.register(ClientId);
 
@@ -17,7 +17,7 @@ ana.on('ready', () => {
     state: 'Alt yazı',//Ana yazı altındaki yazı
     largeImageKey: 'ripbyrustavi',//Large fotoğraf
     largeImageText: 'İmleç yazısı',//İmleç ile üstüne gelindiğinde çıkacak olan yazı
-    smallImageKey: 'hypesquad',//Small fotoğraf
+    smallImageKey: 'cay',//Small fotoğraf
     smallImageText: '2.İmleç yazısı'//İmleç ile üstüne gelindiğinde çıkacak olan yazı
   });
 });
