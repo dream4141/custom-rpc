@@ -9,21 +9,19 @@ const ana = new rpc.Client({ transport: 'ipc' });
 
 
 
-//Asıl Olay İşte Burada
+//Ana kısım
 ana.on('ready', () => {
-  console.log("Başarılı...");
-  console.log("Mansion Creation RPC\'yi Kullandığınız İçin Teşekkür Ederiz.");
+  console.log("Custom RPC: Connected");
   ana.setActivity({
-	//Not: Eğer "... Oynuyor" Değiştirmek İstiyorsanız Yarattığımız App'a Gidip App'in İsmini Değiştirin 
-    details: 'Console.Owner("Maviş");',//Ortadaki Yazı
-    state: 'Custom RPC Özelliği',//En Alttaki Yazı
-    largeImageKey: 'mavis_1',// Large Seçeneğini İşaretleyip Yüklediğimiz Fotoğraf'ın İsmi
-    largeImageText: 'Github: InfinityMavis',// Resmin Üstüne İmleci Getirince Çıkacak Olan Yazı
-    smallImageKey: 'mavis_2',// Small Seçeneğini İşaretleyip Yüklediğimiz Fotoğraf'ın İsmi
-    smallImageText: 'Github\'da Bulabilirsiniz'// Resmin Üstüne İmleci Getirince Çıkacak Olan Yazı
+    details: 'Ana yazı',//Ana yazı
+    state: 'Alt yazı',//Ana yazı altındaki yazı
+    largeImageKey: 'ripbyrustavi',//Large fotoğraf
+    largeImageText: 'İmleç yazısı',//İmleç ile üstüne gelindiğinde çıkacak olan yazı
+    smallImageKey: 'hypesquad',//Small fotoğraf
+    smallImageText: '2.İmleç yazısı'//İmleç ile üstüne gelindiğinde çıkacak olan yazı
   });
 });
 
-//Mansion Creation™ Size Yardım Ve Destek Etmekten Gurur Duyar..
+
 ana.login(ClientId).catch(console.error);
 
