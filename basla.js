@@ -3,7 +3,7 @@ const rpc = require("discord-rpc");
 //Yarattığınız app'in client idsi
 const ClientId = '388341171086295040';
 
-Playboy.register(ClientId);
+ana.register(ClientId);
 
 const ana = new rpc.Client({ transport: 'ipc' });
 
