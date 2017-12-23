@@ -1,2 +1,2 @@
 @echo off
-node baslat.js
+node basla.js
