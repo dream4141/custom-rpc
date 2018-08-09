@@ -1,7 +1,7 @@
 const rpc = require("discord-rpc");
 
 //Yarattığınız app'in client idsi
-const ClientId = '388418356547682315';
+const ClientId = '477050778197032980';
 
 rpc.register(ClientId);
 
@@ -13,12 +13,12 @@ const ana = new rpc.Client({ transport: 'ipc' });
 ana.on('ready', () => {
   console.log("Custom RPC: Connected");
   ana.setActivity({
-    details: 'Ana yazı',//Ana yazı
-    state: 'Alt yazı',//Ana yazı altındaki yazı
-    largeImageKey: 'ripbyrustavi',//Large fotoğraf
-    largeImageText: 'İmleç yazısı',//İmleç ile üstüne gelindiğinde çıkacak olan yazı
-    smallImageKey: 'cay',//Small fotoğraf
-    smallImageText: '2.İmleç yazısı'//İmleç ile üstüne gelindiğinde çıkacak olan yazı
+    details: 'DREAM BOT',//Ana yazı
+    state: 'Dream41',//Ana yazı altındaki yazı
+    largeImageKey: 'avatar_m11',//Large fotoğraf
+    largeImageText: 'DREAM41',//İmleç ile üstüne gelindiğinde çıkacak olan yazı
+    smallImageKey: 'avatar_m11',//Small fotoğraf
+    smallImageText: 'dreambot'//İmleç ile üstüne gelindiğinde çıkacak olan yazı
   });
 });
 
